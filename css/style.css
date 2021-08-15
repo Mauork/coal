@@ -26,6 +26,7 @@ body {
 header .container {
     flex-direction: row;
     justify-content: space-between;
+    padding: 30px 0 30px 0;
 }
 
 #about .container {
@@ -68,4 +69,26 @@ header .container {
 footer .container {
     flex-direction: row;
     justify-content: space-between;
+    padding: 60px 0 60px 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 30px;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+}
+
+.info p:first-of-type, .phones p:first-of-type {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #393F47;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
