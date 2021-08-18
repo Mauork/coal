@@ -91,7 +91,7 @@ footer .container {
 }
 #banner {
     width: 100%;
-    background-image: url("/img/banner.png");
+    background-image: url("../img/banner.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
