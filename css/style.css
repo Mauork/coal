@@ -8,21 +8,38 @@ body {
 
     display: flex;
     flex-direction: column;
-
+    height: 100vh;
     align-items: center;
 }
 
+h1 {
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+h2 {
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
 
     flex-direction: column;
-
-    min-width: 1110px;
     max-width: 1110px;
+    margin: 0 auto;
 }
-
+header{
+    width: 100%;
+}
 header .container {
     flex-direction: row;
     justify-content: space-between;
@@ -34,8 +51,8 @@ header .container {
 }
 
 .about-img {
-    width: 600px;
-    height: 320px;
+    width: 50%;
+    height: auto;
 }
 
 .item-img {
@@ -51,7 +68,7 @@ header .container {
 .list-items {
     display: flex;
     flex-direction: row;
-    
+    margin-top: 60px;
     width: 100%;
     flex-wrap: wrap;
 }
@@ -70,8 +87,24 @@ footer .container {
     flex-direction: row;
     justify-content: space-between;
     padding: 60px 0 60px 0;
+    width: 100%;
 }
-
+#banner {
+    width: 100%;
+    background-image: url("/img/banner.png");
+}
+#banner .container { 
+    margin: 150px 450px;
+    padding: 45px 75px;
+    border: 1px solid #C8A35F;
+    box-sizing: border-box;
+}
+#banner p {
+    margin-top: 45px;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+}
 a {
     color: #fff;
     text-decoration: none;
@@ -91,4 +124,43 @@ footer {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: auto;
+}
+#services, #about, .map {
+    width: 100%;
+    margin-top: 120px;
+}
+#services .container, #about .container {
+    width: 100%;
+    align-items: start;
+}
+.gold-line {
+    width: 90px;
+    height: 6px;
+    background-color: #C8A35F;
+    margin-bottom: 40px;
+}
+#about .left {
+    margin-right: 65px;
+}
+#about p {
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 23px;
+}
+.list-items .item p {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-top: 23px;
+}
+.list-items .item {
+    padding: 35px 0px;
+}
+.list-items .item:hover {
+    background: #C8A35F;
+    transition: 0.3s;
 }
