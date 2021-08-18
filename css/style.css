@@ -183,6 +183,10 @@ footer {
         flex-direction: column;
     }
 
+    #about .left {
+        margin-right: 0;
+    }
+
     .about-img {
         width: 100%;
         margin-top: 30px;
@@ -209,5 +213,46 @@ footer {
     .info {
         margin: 30px 0;
         text-align: center;
+    }
+
+    a {
+        margin-left: 0;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-nav-second {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container {
+        max-width: 320px;
+    }
+
+    #banner .container {
+        padding: 45px 20px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    .list-items .item {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 36px;
     }
 }
